@@ -1,12 +1,11 @@
 {
   "name": "language-stata",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Syntax support and commands for Stata",
   "repository": "https://github.com/puterleat/atom-language-stata",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
