@@ -2,7 +2,7 @@
   "name": "language-stata",
   "version": "0.0.1",
   "description": "Syntax support and commands for Stata",
-  "repository": "https://github.com/atom/language-stata",
+  "repository": "https://github.com/puterleat/atom-language-stata",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
