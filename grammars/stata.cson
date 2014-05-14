@@ -158,7 +158,7 @@
       }
     },
     "comment": "model commands.",
-    "match": "\\b(anova|xtmixed|regress)\\b"
+    "match": "\\b(anova|xtmixed|regress|ivregress|xtreg|xtreg_be|xtreg_fe|xtreg_ml|xtreg_pa_p|xtreg_re|xtregar|xtrere_p|xtset|xtsf_ll|xtsf_llti|xtsum|xttab|xttest0|xttobit|xttobit_8|xttobit_p|xttrans)\\b"
   }
 
 {
