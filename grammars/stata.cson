@@ -31,7 +31,7 @@
       {
     'begin': '\\\`'
     'end': '\\\''
-    'name': 'string.quoted.double.do'
+    'name': 'string.quoted.double.stata'
     'patterns': [
       {
         'match': '\\\\.'
@@ -39,7 +39,7 @@
       }
         {
     'match': '\\b(true|false|null|this|by|foreach|mata)\\b'
-    'name': 'constant.language.do'
+    'name': 'constant.language.stata'
   }
     ]
   }
