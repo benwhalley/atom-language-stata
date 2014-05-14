@@ -37,6 +37,10 @@
         'match': '\\\\.'
         'name': 'constant.character.escaped.untitled'
       }
+        {
+    'match': '\\b(true|false|null|this|by|foreach|mata)\\b'
+    'name': 'constant.language.do'
+  }
     ]
   }
     'patterns': [
@@ -117,7 +121,7 @@
         'name': 'keyword.control.flow.stata'
       '2':
         'name': 'keyword.control.flow.stata'
-    'match': '\\b(foreach)\\s+[a-zA-Z0-9_]+\\s+(in|of loc(a|al)?|of glo(b|ba|bal)?|of var(l|li|lis|list)?|of new(l|li|lis|list)?|of num(l|li|lis|list)?)\\b'
+    'match': '\\s+[a-zA-Z0-9_]+\\s+(in|of loc(a|al)?|of glo(b|ba|bal)?|of var(l|li|lis|list)?|of new(l|li|lis|list)?|of num(l|li|lis|list)?)\\b'
   }
   {
     'captures':
