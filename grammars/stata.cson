@@ -28,26 +28,7 @@
       '0':
         'name': 'punctuation.definition.string.end.stata'
     'name': 'string.quoted.double.compound.stata'
-      {
-    'begin': '\\\`'
-    'end': '\\\''
-    'name': 'string.quoted.double.stata'
     'patterns': [
-      {
-        'match': '\\\\.'
-        'name': 'constant.character.escaped.untitled'
-      }
-        {
-    'match': '\\b(true|false|null|this|by|foreach|mata)\\b'
-    'name': 'constant.language.stata'
-  }
-    ]
-  }
-    'patterns': [
-        {
-    'match': '(^\\*).*$'
-    'name': 'comment.line.number-sign.do'
-        }
       {
         'include': '#cdq_string_content'
       }
