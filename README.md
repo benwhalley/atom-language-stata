@@ -1,3 +1,5 @@
 # language-stata package
 
-An adaptation of the textmate stata package from https://github.com/statatmbundle/Stata.tmbundle
+A language syntax package for Atom based on the textmate stata package (https://github.com/statatmbundle/Stata.tmbundle).
+
+This package includes syntax highlighting, but no tools for executing Stata code.
