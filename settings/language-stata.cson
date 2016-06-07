@@ -1,6 +1,7 @@
 '.source.stata, .source.mata':
   'editor':
-    'commentStart': '// '
+    'commentStart': '/* '
+    'commentEnd': ' */'
 '.source.stata':
   'editor':
     'increaseIndentPattern': '^.*\\{[^}]*$'
