@@ -4,4 +4,4 @@ A language syntax package for Atom based on the textmate stata package (https://
 
 This package includes syntax highlighting, but no tools for executing Stata code.
 
-To execute Stata code from Atom, consider the `script` package in Atom.
+To execute Stata code from Atom, consider either the `stata-exec` or `script` packages in Atom.
