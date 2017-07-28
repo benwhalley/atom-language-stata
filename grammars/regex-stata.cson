@@ -1,0 +1,88 @@
+'scopeName': 'source.regexp.stata'
+'comment': 'Match Stata\'s (limited) regular expression syntax.'
+'fileTypes': [
+    're'
+]
+'name': 'Regular Expressions (Stata)'
+'patterns': [
+  # REGULAR EXPRESSIONS:
+  {
+    'match': '\\^|\\$'
+    'name': 'keyword.control.anchor.regexp'
+  }
+  {
+    'match': '[\\?\\+\\*]'
+    'name': 'keyword.control.quantifier.regexp'
+  }
+  {
+    'match': '\\|'
+    'name': 'keyword.control.or.regexp'
+  }
+  {
+    'begin': '(\\()'
+    'beginCaptures':
+      '1':
+        'name': 'punctuation.string.group.regexp'
+    'end': '(\\))'
+    'endCaptures':
+      '1':
+        'name': 'punctuation.string.group.regexp'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
+  }
+  {
+    'include': '#character-class'
+  }
+  {
+    'match': '[a-zA-Z_0-9]+'
+    'name': 'string.quoted.stata'
+  }
+  # {
+  #   'match': '[^\\^\\$\\?\\+\\*\\|\\(\\)\\.\\\\\\[\\]\"\']+'
+  #   'name': 'string.quoted.double.compound.stata'
+  #   'comment': 'color anything other than special characters the string color'
+  # }
+]
+'repository':
+  'character-class':
+    'patterns': [
+      {
+        'match': '\\.'
+        'name': 'constant.character.character-class.regexp'
+      }
+      {
+        'match': '\\\\.'
+        'name': 'constant.character.escape.backslash.regexp'
+        'comment': 'this changes the color of an escaped character'
+      }
+      {
+        'begin': '(\\[)(\\^)?'
+        'beginCaptures':
+          '1':
+            'name': 'punctuation.definition.character-class.regexp'
+          '2':
+            'name': 'keyword.operator.negation.regexp'
+        'end': '(\\])'
+        'endCaptures':
+          '1':
+            'name': 'punctuation.definition.character-class.regexp'
+        'name': 'constant.other.character-class.set.regexp'
+        'patterns': [
+          {
+            'include': '#character-class'
+          }
+          {
+            'captures':
+              '2':
+                'name': 'constant.character.escape.backslash.regexp'
+              '4':
+                'name': 'constant.character.escape.backslash.regexp'
+            'match': '((\\\\.)|.)\\-((\\\\.)|[^\\]])'
+            'name': 'constant.other.character-class.range.regexp'
+          }
+        ]
+      }
+    ]
