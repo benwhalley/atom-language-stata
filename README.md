@@ -1,3 +1,5 @@
+### Deprecated; please use [kylebarron/language-stata](https://github.com/kylebarron/language-stata), available on Atom as [`language-stata`](https://atom.io/packages/language-stata).
+
 # language-stata package
 
 A language syntax package for Stata code in Atom.
